@@ -19,7 +19,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func redButton(_ sender: AnyObject) {
+        simonSaysGame.guessRed()
+        if simonSaysGame.wonGame(){
+            winLabel.text = "You Won!"
+        }
+    }
+    
+    @IBAction func greenbutton(_ sender: AnyObject) {
+        simonSaysGame.guessGreen()
+        if simonSaysGame.wonGame(){
+            winLabel.text = "You Won!"
+        }
+    }
+    
+    @IBAction func yellowButton(_ sender: AnyObject) {
+        simonSaysGame.guessYellow()
+        if simonSaysGame.wonGame(){
+            winLabel.text = "You Won!"
+        }
+    }
+    
+    @IBAction func blueButton(_ sender: AnyObject) {
+        simonSaysGame.guessBlue()
+        if simonSaysGame.wonGame(){
+            winLabel.text = "You Won!"
+        }
+    }
+    
 }
+
+
 
 // MARK: - SimonSays Game Methods
 extension ViewController {
